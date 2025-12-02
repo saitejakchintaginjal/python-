@@ -72,10 +72,50 @@ Problem Statement: Write a Python program that:
 2.  Calculates the sum of all integers in this range.
 3.  Displays the final sum.
     """
-    
+
 total_sum = 0
 
 for num in range(1, 51):
 total_sum += num
 
 print("The sum of numbers from 1 to 50 is:", total_sum)
+
+# ASSIGNMENT 3
+
+Task-1:
+"""Problem Statement: Write a Python program that:
+
+1.  Defines a function named factorial that takes a number as an argument and calculates its factorial using a loop or recursion.
+2.  Returns the calculated factorial.
+3.  Calls the function with a sample number and prints the output.
+    """
+
+def fact_rec(num):
+if num == 1:
+return 1
+else:
+return num \* fact_rec(num - 1)
+
+number = int(input("Enter the number: "))
+result = fact_rec(number)
+
+print(f"factorial of {number} is {result}")
+
+Task-2:
+"""
+Problem Statement: Write a Python program that:
+
+1.  Asks the user for a number as input.
+2.  Uses the math module to calculate the:
+    o Square root of the number
+    o Natural logarithm (log base e) of the number
+    o Sine of the number (in radians)
+3.  Displays the calculated results.
+    """
+
+import math
+
+number = int(input("Enter a number: "))
+print(f"Square root: {math.sqrt(number)}")
+print(f"Logarithm: {math.log(number)}")
+print(f"Sine: {math.sin(number)}")
